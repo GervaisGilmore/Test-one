@@ -8,7 +8,8 @@ import tonSvg from './ton.svg';
 
 export const IndexPage: FC = () => {
   return (
-    <Page back={false}>
+    <div style={{ backgroundColor: 'green', minHeight: '100vh' }}>
+      <Page back={false}>
       <List>
         <Section
           header="Features"
@@ -38,6 +39,7 @@ export const IndexPage: FC = () => {
           </Link>
         </Section>
       </List>
-    </Page>
+      </Page>
+    </div>
   );
 };
